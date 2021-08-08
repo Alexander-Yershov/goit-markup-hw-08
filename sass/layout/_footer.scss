@@ -1,0 +1,278 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.logo-footer {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  @include font(24px, 700, 28px);
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.address {
+  font-style: normal;
+  @include font($lh: 24px);
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+.footer-contacts-item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.footer-mail-link {
+  @include font($lh: 24px);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-tel-link {
+  @include font($lh: 24px);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-contacts {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+// .position {
+// display: flex;
+// align-items: baseline;
+// }
+
+.footer-join {
+  margin-bottom: 60px;
+}
+.social-list.join-list {
+  padding-bottom: 0;
+}
+
+.footer-join-title {
+  @include font($fw: 700);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.footer-form-wrapper {
+  text-align: center;
+}
+
+.footer-form-head {
+  @include font($fw: 700);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer-form-mail-box {
+  width: 100%;
+  align-items: center;
+}
+.footer-form-input {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(0, 0, 0, 0);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: #fff;
+  padding-left: 16px;
+  margin-bottom: 20px;
+
+  &::placeholder {
+    @include font(16px, 400, 20px);
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-form-btn {
+  @include font(16px, 700, 30px);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 28px;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.footer-form-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+// ======= 768+ ============
+
+@media screen and (min-width: 768px) {
+  .footer-contacts-join-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  // .footer-contacts {
+  //   margin-left: 61px;
+  //   margin-right: 165px;
+  // }
+  .footer-form-input {
+    width: 450px;
+  }
+}
+
+// ======= 1200+ ============
+
+@media screen and (min-width: 1200px) {
+  .position {
+    display: flex;
+    align-items: baseline;
+  }
+  .footer-contacts {
+    margin-left: 0px;
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+  .footer-form-input {
+    width: 358px;
+    margin: 0;
+  }
+  .footer-form-wrapper {
+    margin-left: auto;
+    text-align: start;
+  }
+  .footer-form-btn {
+    margin-left: 12px;
+  }
+  .footer-form-mail-box {
+    display: flex;
+    align-items: center;
+  }
+  .footer-join {
+    margin-bottom: 0;
+  }
+  .logo-footer {
+    @include font(26px, 700, 31px);
+  }
+}
+
+// .footer {
+//   background-color: #2f303a;
+//   padding-top: 60px;
+//   padding-bottom: 60px;
+// }
+// .logo-footer {
+//   display: block;
+//   font-family: 'Raleway', sans-serif;
+//   @include font(26px, 700, 31px);
+//   letter-spacing: 0.03em;
+//   color: #ffffff;
+//   margin-bottom: 20px;
+// }
+// .address {
+//   font-style: normal;
+//   @include font($lh: 24px);
+//   letter-spacing: 0.03em;
+//   color: #ffffff;
+//   margin-bottom: 9px;
+// }
+// .footer-contacts-item {
+//   &:not(:last-child) {
+//     margin-bottom: 9px;
+//   }
+// }
+
+// .footer-mail-link {
+//   @include font($lh: 24px);
+//   letter-spacing: 0.03em;
+//   color: rgba(255, 255, 255, 0.6);
+// }
+// .footer-tel-link {
+//   @include font($lh: 24px);
+//   letter-spacing: 0.03em;
+//   color: rgba(255, 255, 255, 0.6);
+// }
+// .footer-contacts {
+//   margin-right: 70px;
+// }
+
+// .position {
+//   display: flex;
+//   align-items: baseline;
+// }
+// .footer-join-title {
+//   @include font($fw: 700);
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+//   margin-bottom: 20px;
+
+//   color: #ffffff;
+// }
+// .footer-form-wrapper {
+//   margin-left: auto;
+// }
+
+// .footer-form-head {
+//   @include font($fw: 700);
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+//   color: #ffffff;
+//   margin-bottom: 20px;
+// }
+// .footer-form-mail-box {
+//   display: flex;
+//   align-items: center;
+// }
+// .footer-form-input {
+//   width: 358px;
+//   height: 50px;
+//   background-color: rgb(0, 0, 0, 0);
+//   border: 1px solid rgba(255, 255, 255, 0.3);
+//   box-sizing: border-box;
+//   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//   border-radius: 4px;
+//   color: #fff;
+//   padding-left: 16px;
+
+//   &::placeholder {
+//     @include font(16px, 400, 20px);
+//     display: flex;
+//     align-items: center;
+//     letter-spacing: 0.03em;
+//     color: rgba(255, 255, 255, 0.6);
+//   }
+// }
+
+// .footer-form-btn {
+//   @include font(16px, 700, 30px);
+//   display: flex;
+//   align-items: center;
+//   text-align: center;
+//   letter-spacing: 0.06em;
+//   color: #ffffff;
+//   background: var(--accent-color);
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//   border-radius: 4px;
+//   padding: 10px 28px;
+//   border: none;
+//   margin-left: 12px;
+//   cursor: pointer;
+// }
+// .footer-form-icon {
+//   width: 24px;
+//   height: 24px;
+//   margin-left: 10px;
+// }

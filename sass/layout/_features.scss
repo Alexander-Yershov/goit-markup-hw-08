@@ -1,0 +1,111 @@
+.features-list-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+.features-list-icon {
+  width: 70px;
+  height: 70px;
+}
+.features-list-title {
+  @include font($fw: 700);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--title-color);
+  margin-bottom: 10px;
+}
+.features-desc {
+  @include font($lh: 24px);
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+.features-list-item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and(min-width:480px) {
+  .features-list-item {
+    width: 450px;
+  }
+}
+
+@media screen and(min-width:768px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .features-list-item {
+    max-width: 354px;
+    flex-basis: calc((100% - 60px) / 2);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .features-list-title {
+    text-align: start;
+  }
+}
+
+@media screen and(min-width:1200px) {
+  .features-list-item {
+    max-width: 270px;
+    flex-basis: calc((100% - 120px) / 4);
+  }
+  .features-list-cards {
+    width: 270px;
+    height: 120px;
+  }
+  .features {
+    padding-bottom: 47px;
+  }
+}
+
+// .features {
+//   padding-bottom: 47px;
+// }
+
+// .features-list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin-top: -30px;
+//   margin-left: -30px;
+// }
+// .features-list-item {
+//   max-width: 270px;
+//   flex-basis: calc((100% - 120px) / 4);
+//   margin-top: 30px;
+//   margin-left: 30px;
+// }
+// .features-list-cards {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin-bottom: 30px;
+//   width: 270px;
+//   height: 120px;
+//   background-color: #f5f4fa;
+// }
+// .features-list-icon {
+//   width: 70px;
+//   height: 70px;
+// }
+
+// .features-list-title {
+//   @include font($fw: 700);
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+//   color: var(--title-color);
+//   margin-bottom: 10px;
+// }
+// .features-desc {
+//   @include font($lh: 24px);
+//   letter-spacing: 0.03em;
+//   color: var(--text-color);
+// }
